@@ -78,7 +78,7 @@
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintVertical_bias="0.91" />
 
     <Spinner
         android:id="@+id/break_menu"
@@ -94,7 +94,7 @@
         app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintVertical_bias="0.91" />
 
     <Spinner
         android:id="@+id/longbreak_menu"
@@ -109,7 +109,7 @@
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92"/>
+        app:layout_constraintVertical_bias="0.91"/>
 
     <TextView
         android:id="@+id/caption_focus"
@@ -124,7 +124,7 @@
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925"/>
+        app:layout_constraintVertical_bias="0.915"/>
 
     <TextView
         android:id="@+id/caption_break"
@@ -139,7 +139,7 @@
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
+        app:layout_constraintVertical_bias="0.915" />
 
     <TextView
         android:id="@+id/caption_longbreak"
@@ -154,7 +154,7 @@
         app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925"/> />
+        app:layout_constraintVertical_bias="0.915"/> />
 
     <ImageView
         android:id="@+id/outerCircle"

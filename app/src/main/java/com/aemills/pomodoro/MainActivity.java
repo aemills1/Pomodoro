@@ -240,6 +240,7 @@ public class MainActivity extends AppCompatActivity {
         colorAnimation.start();
     }
 
+    // called when the timer is pressed - plays/pauses timer
     private void playPauseTimer() {
         isPaused = !isPaused;
         if (!isActive) {
@@ -251,6 +252,11 @@ public class MainActivity extends AppCompatActivity {
             countDownTimer.cancel();
         }
         isActive = !isActive;
+
+        if (!isStarted) {
+            bgAnimation.animate().scaleX(0.75f).scaleY(0.75f)
+                    .alpha(1).setDuration(0).start();
+        }
         isStarted = true;
 
         alertSound.stop();
@@ -258,12 +264,14 @@ public class MainActivity extends AppCompatActivity {
         vibrator.vibrate(50);
     }
 
+    // changes UI text to display the current time remaining
     private void setTimerText(long millisecondsRemaining) {
         long seconds = (millisecondsRemaining / 1000) % 60;
         long minutes = (millisecondsRemaining / 1000) / 60;
         timerTextView.setText(String.format(Locale.US, "%02d:%02d", minutes, seconds));
     }
 
+    // manages timer logic, including play/pause behavior and alarms
     private void countdown(boolean isUnpaused) {
         if (countDownTimer != null) {
             countDownTimer.cancel();
@@ -320,9 +328,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // trigger timer-end animation
                 bgAnimation.animate().scaleX(1.0f).scaleY(1.0f)
-                        .alpha(0).setDuration(500).start();
-                bgAnimation.animate().scaleX(0.5f).scaleY(0.5f)
-                        .alpha(1).setDuration(0).start();
+                        .alpha(0).setDuration(800).start();
             }
         };
 
